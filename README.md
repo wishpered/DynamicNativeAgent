@@ -4,9 +4,9 @@ DynamicNativeAgent is a jvmti wrapper for redefine java classes at runtime using
 ## Usage
 
 ```java
-AgentFactory.loadNative();
+AgentFactory.loadNative(); //Load the .dll or .so in the JVM
 
-NativeAgent agent = AgentFactory.createNativeAgent();
+NativeAgent agent = AgentFactory.createNativeAgent(); //Create new agent
 
 //Redefine some classes
 agent.redefineClasses(
