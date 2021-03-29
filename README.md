@@ -8,8 +8,9 @@ AgentFactory.loadNative();
 
 NativeAgent agent = AgentFactory.createNativeAgent();
 
+//Redefine some classes
 agent.redefineClasses(
-  new ClassDef(TestClass.class, bytesOfClass);
+  new ClassDef(TestClass.class, bytesOfClass),
+  new ClassDef(RandomClass.class, bytesOfClass)
 );
 ```
-
