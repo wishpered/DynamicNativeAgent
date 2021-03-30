@@ -1,0 +1,8 @@
+.idea
+runDir
+DynamicNativeAgent.iml
+tests
+build
+.vscode
+out
+.build.sh.swp
