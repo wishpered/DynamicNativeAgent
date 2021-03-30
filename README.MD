@@ -1,5 +1,5 @@
 # DynamicNativeAgent
-The DynamicNativeAgent can redefine classes using native library (without classloaders or Instrumentation)
+The DynamicNativeAgent can redefine java classes using native library (without classloaders or Instrumentation)
 
 ## Usage
 
