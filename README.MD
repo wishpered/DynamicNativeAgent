@@ -16,4 +16,5 @@ agent.redefineClasses(
 ```
 
 ## Builds
-Soon
+Linux : [download](https://github.com/wishpered/DynamicNativeAgent/releases/download/beta/DynamicNativeAgent-linux.jar)
+Windows : soon
