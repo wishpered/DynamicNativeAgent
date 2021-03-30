@@ -6,3 +6,4 @@ build
 .vscode
 out
 .build.sh.swp
+DynamicNativeAgent.jar
