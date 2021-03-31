@@ -15,7 +15,5 @@ agent.redefineClasses(
 );
 ```
 
-## Builds
-- Linux : [download](https://github.com/wishpered/DynamicNativeAgent/releases/download/beta/DynamicNativeAgent-linux.jar)
-
-- Windows : soon
+## TODO
+- Clean old classes after redefine
