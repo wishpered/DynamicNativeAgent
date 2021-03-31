@@ -12,9 +12,8 @@ JNIEXPORT jint JNICALL
 JNI_OnLoad(JavaVM * vm, void * reserved) {
 	jvm = vm;
 	jvm -> GetEnv((void ** ) & jvmti, JVMTI_VERSION_1_0);
-	jvmtiCapabilities capabilities = {
-		0
-	};
+	jvmtiCapabilities capabilities;
+	jvmti->GetCapabilities(&capabilities);
 	capabilities.can_redefine_classes = 1;
 	capabilities.can_redefine_any_class = 1;
 	jvmtiError err = jvmti -> AddCapabilities( & capabilities);
