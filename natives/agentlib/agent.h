@@ -2,14 +2,17 @@
 #include "jni.h"
 /* Header for class me_whispered_dynamicnativeagent_NativeAgent */
 
-#ifndef _Included_me_whispered_dynamicnativeagent_NativeAgent
-#define _Included_me_whispered_dynamicnativeagent_NativeAgent
+#ifndef _Included_me_whispered_dynamicnativeagent_agent
+#define _Included_me_whispered_dynamicnativeagent_agent
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 JNIEXPORT jint JNICALL Java_me_whispered_dynamicnativeagent_NativeAgent_redefineClasses0
   (JNIEnv *, jobject,jobjectArray);
+
+JNIEXPORT jint JNICALL Java_me_whispered_dynamicnativeagent_NativeAgent_appendToBootstrapClassLoaderSearch0
+(JNIEnv *, jobject, const char*)
 
 #ifdef __cplusplus
 }

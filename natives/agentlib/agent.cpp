@@ -1,7 +1,7 @@
 #include <string.h>
 #include "jni.h"
 #include "jvmti.h"
-#include "NativeAgent.h"
+#include "agent.h"
 
 using namespace std;
 
@@ -38,6 +38,10 @@ void deallocate(jvmtiEnv * jvmtienv, void * buffer) {
 	return;
 }
 
+JNIEXPORT jint JNICALL Java_me_whispered_dynamicnativeagent_NativeAgent_appendToBootstrapClassLoaderSearch0
+(JNIEnv * env, jobject instance, const char* segment) {
+    jvmti->AddToBootstrapClassLoaderSearch(segment);
+}
 
 JNIEXPORT jint JNICALL Java_me_whispered_dynamicnativeagent_NativeAgent_redefineClasses0
 (JNIEnv * env, jobject instance, jobjectArray classDefinitions) {

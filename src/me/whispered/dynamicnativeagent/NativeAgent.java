@@ -15,6 +15,13 @@ public class NativeAgent {
 	public JVMTIError redefineClasses(ClassDef... definitions) {
 		return JVMTIError.parse(this.redefineClasses0(definitions));
 	}
-	native int redefineClasses0(ClassDef[] definitions);
+
+	private native int redefineClasses0(ClassDef[] definitions);
+
+	public void appendToBootstrapClassLoaderSearch(String path) {
+		appendToBootstrapClassLoaderSearch0(path.toCharArray());
+	}
+
+	private native int appendToBootstrapClassLoaderSearch0(char[] segment);
 
 }
